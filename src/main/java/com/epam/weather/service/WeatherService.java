@@ -11,14 +11,25 @@ import java.time.LocalDateTime;
 
 @Service
 public class WeatherService {
+
     @Value("${weather.api.key}")
     private String apiKey;
 
-    private final String weatherApiUrl = "https://api.weatherapi.com/v1/current.json";
+    @Value("${weather.api.url}")
+    private String weatherApiUrl;
+
     private final WeatherDataRepository weatherDataRepository;
 
     public WeatherService(WeatherDataRepository weatherDataRepository) {
         this.weatherDataRepository = weatherDataRepository;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
+
+    public void setWeatherApiUrl(String weatherApiUrl) {
+        this.weatherApiUrl = weatherApiUrl;
     }
 
     public WeatherData fetchWeatherDataByCity(String city) {

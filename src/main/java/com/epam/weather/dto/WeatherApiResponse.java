@@ -57,18 +57,18 @@ public class WeatherApiResponse {
         public void setTempC(double tempC) {
             this.tempC = tempC;
         }
-    }
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    public static class Condition {
-        private String text;
+        @JsonIgnoreProperties(ignoreUnknown = true)
+        public static class Condition {
+            private String text;
 
-        public String getText() {
-            return text;
-        }
+            public String getText() {
+                return text;
+            }
 
-        public void setText(String text) {
-            this.text = text;
+            public void setText(String text) {
+                this.text = text;
+            }
         }
     }
 }

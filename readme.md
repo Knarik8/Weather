@@ -2,7 +2,7 @@ Was it easy to complete the task using AI?
 Yes, it was straightforward to complete the task using AI.
 
 How long did the task take you to complete? (Please be honest, we need it to gather anonymized statistics)
-The task took approximately 2-3 hours to complete, including troubleshooting.
+The task took approximately 3-4 hours to complete, including troubleshooting.
 
 Was the code ready to run after generation? What did you have to change to make it usable?
 The initial setup code was not ready to run. I had some exceptions related to libs like
